@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Trait;
+namespace Jimmeak\Doctrine\Trait;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Types\Types;
