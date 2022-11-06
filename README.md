@@ -1,1 +1,1 @@
-# Doctrine-Column-Traits
+# Doctrine Column Traits
