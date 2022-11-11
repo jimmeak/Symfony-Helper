@@ -1,6 +1,6 @@
 <?php
 
-namespace Jimmeak\Doctrine\Trait;
+namespace Jimmeak\Symfony\Entity\Trait;
 
 use Doctrine\ORM\Mapping as ORM;
 

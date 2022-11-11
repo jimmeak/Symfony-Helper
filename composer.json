@@ -1,6 +1,6 @@
 {
-    "name": "jimmeak/doctrine-column-traits",
-    "description": "Doctrine Column Traits.",
+    "name": "jimmeak/symfony-helper",
+    "description": "Symfony Helper for Symfony 6.2 with PHP 8.1",
     "type": "library",
     "minimum-stability": "stable",
     "homepage": "https://github.com/jimmeak/Doctrine-Column-Traits",
@@ -18,7 +18,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Jimmeak\\Doctrine\\": "src/"
+            "Jimmeak\\Symfony\\": "src/Symfony",
+            "Jimmeak\\Datetime\\": "src/Datetime"
         }
     }
 }
