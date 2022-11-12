@@ -12,5 +12,4 @@ trait TitleSlugTrait
     #[ORM\Column(length: 255, unique: true)]
     #[Slug(fields: ['title'])]
     private string $slug;
-
 }

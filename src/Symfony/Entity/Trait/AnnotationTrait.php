@@ -10,12 +10,12 @@ trait AnnotationTrait
     #[ORM\Column(type: Types::TEXT)]
     private string $annotation;
 
-    public function getDescription(): string
+    public function getAnnotation(): string
     {
         return $this->annotation;
     }
 
-    public function setDescription(string $annotation): self
+    public function setAnnotation(string $annotation): self
     {
         $this->annotation = $annotation;
         return $this;

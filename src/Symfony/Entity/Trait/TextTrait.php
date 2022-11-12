@@ -10,12 +10,12 @@ trait TextTrait
     #[ORM\Column(type: Types::TEXT)]
     private string $text;
 
-    public function getDescription(): string
+    public function getText(): string
     {
         return $this->text;
     }
 
-    public function setDescription(string $text): self
+    public function setText(string $text): self
     {
         $this->text = $text;
         return $this;
