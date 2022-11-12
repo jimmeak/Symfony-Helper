@@ -13,4 +13,8 @@ trait NameSlugTrait
     #[Slug(fields: ['name'])]
     private string $slug;
 
+    public function getSlug(): string
+    {
+        return $this->slug;
+    }
 }
