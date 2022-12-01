@@ -7,7 +7,9 @@
     "require": {
         "php": ">=8.1",
         "doctrine/orm": "^2.13.0",
-        "gedmo/doctrine-extensions": "^3.9"
+        "gedmo/doctrine-extensions": "^3.9",
+        "symfony/uid": "^6.2",
+        "symfony/doctrine-bridge": "^6.2"
     },
     "license": "proprietary",
     "authors": [
