@@ -13,22 +13,22 @@ trait UuidTrait
     #[ORM\GeneratedValue(strategy: 'CUSTOM')]
     #[ORM\Column(type: UuidType::NAME, unique: true)]
     #[ORM\CustomIdGenerator(class: 'doctrine.uuid_generator')]
-    private UuidV4 $uuid;
+    private UuidV4 $id;
 
     public function getId(): UuidV4
     {
-        return $this->uuid;
+        return $this->id;
     }
 
-    public function setId(UuidV4 $uuid): static
+    public function setId(UuidV4 $id): static
     {
-        $this->uuid = $uuid;
+        $this->id = $id;
         return $this;
     }
 
-    public function refreshUuid(): static
+    public function refreshId(): static
     {
-        $this->uuid = Uuid::v4();
+        $this->id = Uuid::v4();
         return $this;
     }
 }
