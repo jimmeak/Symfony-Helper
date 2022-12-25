@@ -17,7 +17,7 @@ trait UuidTrait
 
     public function getId(): UuidV4
     {
-        return $this->id;
+        return $this->uuid;
     }
 
     public function setId(UuidV4 $uuid): static
