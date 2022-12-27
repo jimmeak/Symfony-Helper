@@ -14,7 +14,7 @@ trait TitleTrait
         return $this->title;
     }
 
-    public function setTitle(string $title): self
+    public function setTitle(string $title): static
     {
         $this->title = $title;
         return $this;

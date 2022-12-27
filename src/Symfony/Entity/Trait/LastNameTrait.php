@@ -14,7 +14,7 @@ trait LastNameTrait
         return $this->lastName;
     }
 
-    public function setLastName(string $lastName): self
+    public function setLastName(string $lastName): static
     {
         $this->lastName = $lastName;
         return $this;

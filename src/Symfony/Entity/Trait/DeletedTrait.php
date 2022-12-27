@@ -14,7 +14,7 @@ trait DeletedTrait
         return $this->deleted;
     }
 
-    public function setDeleted(bool $deleted = true): self
+    public function setDeleted(bool $deleted = true): static
     {
         $this->deleted = $deleted;
         return $this;

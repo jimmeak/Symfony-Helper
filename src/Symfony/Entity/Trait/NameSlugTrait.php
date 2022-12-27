@@ -18,7 +18,7 @@ trait NameSlugTrait
         return $this->slug;
     }
 
-    public function setSlug(string $slug): self
+    public function setSlug(string $slug): static
     {
         $this->slug = $slug;
         return $this;

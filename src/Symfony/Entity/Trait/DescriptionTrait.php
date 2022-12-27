@@ -15,7 +15,7 @@ trait DescriptionTrait
         return $this->description;
     }
 
-    public function setDescription(string $description): self
+    public function setDescription(string $description): static
     {
         $this->description = $description;
         return $this;

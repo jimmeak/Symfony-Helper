@@ -7,20 +7,19 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
-trait CreatedAtTrait
+trait PublishedAtTrait
 {
     #[ORM\Column(type: Types::DATETIMETZ_IMMUTABLE, options: ['default' => 'CURRENT_TIMESTAMP'])]
-    #[Gedmo\Timestampable(on: 'create')]
-    private DateTimeImmutable $createdAt;
+    private DateTimeImmutable $publishedAt;
 
-    public function getCreatedAt(): DateTimeImmutable
+    public function getPublishedAt(): DateTimeImmutable
     {
-        return $this->createdAt;
+        return $this->publishedAt;
     }
 
-    public function setCreatedAt(DateTimeImmutable $createdAt): static
+    public function setPublishedAt(DateTimeImmutable $publishedAt): static
     {
-        $this->createdAt = $createdAt;
+        $this->publishedAt = $publishedAt;
         return $this;
     }
 }

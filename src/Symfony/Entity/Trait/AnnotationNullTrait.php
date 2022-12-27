@@ -15,7 +15,7 @@ trait AnnotationNullTrait
         return $this->annotation;
     }
 
-    public function setAnnotation(string $annotation): self
+    public function setAnnotation(string $annotation): static
     {
         $this->annotation = $annotation;
         return $this;
